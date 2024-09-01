@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .content {
+        display: flex;
+        padding: 50px 100px;
+        width: 100%;
+      }
+      .blue {
+        color: blue;
+      }
+      .pink {
+        color: rgb(250, 144, 121);
+      }
+      .p-content {
+        width: 70%;
+      }
+      img {
+        width: 450px;
+        height: 450px;
+      }
+      .feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bg-gradient {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+      }
+      footer h5 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      footer p {
+        margin-bottom: 10px;
+      }
+      footer hr {
+        background-color: #fff;
+        width: 60px;
+        height: 2px;
+        margin: 10px auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        .content {
+          display: flex;
+          flex-direction: column;
+          padding: 50px 20px;
+          width: 100%;
+        }
+        img {
+          width: 300px;
+          height: 300px;
+        }
+        .p-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg flex flex-row ms-5 me-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jillion Technologies</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">ContactUs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <div>
+        <h2 class="blue">WE MAKE OUR IDEA'S</h2>
+        <h2 class="pink">INTO REALITY</h2>
+        <p class="p-content">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.Some quick example text to build on the
+          card title and make up the bulk of the card's content.
+        </p>
+        <button type="button" class="btn btn-primary">Get Started</button>
+        <button type="button" class="btn btn-outline-primary">
+          Contact Us
+        </button>
+      </div>
+      <div>
+        <img src="image.png" alt="" />
+      </div>
+    </div>
+    <div class="container d-flex flex-column">
+      <div class="row">
+        <h2 class="col-md-12 d-flex justify-content-center">Features</h2>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="work.png" alt="Team" />
+          </div>
+          <div class="col-md-6">
+            <h3>Work Culture</h3>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-1 order-2">
+            <h3>Team</h3>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <!-- Image on the right (laptop) or top (mobile) -->
+          <div class="col-md-6 order-md-2 order-1 text-center">
+            <img src="Team.jpg" alt="Your Image" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="Reading.jpg" alt="Team" />
+          </div>
+          <div class="col-md-6">
+            <h3>Reading</h3>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2>Products</h2>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top h-25 object-fit-contain"
+              src="products/product1.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top h-25 object-fit-contain"
+              src="products/product2.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card" style="width: 15rem">
+            <img
+              class="card-img-top h-25 object-fit-contain"
+              src="products/product3.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h2 class="col-md-12 d-flex justify-content-center">Contact Us</h2>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-around">
+        <img
+          src="Contact.jpg"
+          alt="contact us "
+          class="object-fit-contain d-none d-md-block"
+        />
+        <form class="col-12 col-md-4">
+          <div data-mdb-input-init class="form-outline mb-2">
+            <label class="form-label" for="form1Example2">Name</label>
+            <input type="text" id="form1Example2" class="form-control" />
+          </div>
+          <div data-mdb-input-init class="form-outline mb-2">
+            <label class="form-label" for="form1Example1">Email address</label>
+            <input type="email" id="form1Example1" class="form-control" />
+          </div>
+          <div data-mdb-input-init class="form-outline mb-2">
+            <label class="form-label" for="form1Example1">Message</label>
+            <textarea id="form1Example1" class="form-control"></textarea>
+          </div>
+
+          <button
+            data-mdb-ripple-init
+            type="submit"
+            class="btn btn-primary btn-block"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="bg-primary text-white mt-4 mt-md-0 pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <!-- Column 1: Contact Us -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+            <hr class="mb-4" />
+            <p>Email</p>
+            <p>contact@ILLIONTECHNOLOGIES.com</p>
+            <p>Phone</p>
+            <p>123456789</p>
+            <p>Address</p>
+            <p>C-260, Sector-63, Noida, UP-201301</p>
+          </div>
+
+          <!-- Column 2: Company -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h5 class="text-uppercase font-weight-bold">Company</h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >About Us</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Services</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Portfolio</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Development Process</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Career</a
+              >
+            </p>
+          </div>
+
+          <!-- Column 3: Service -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h5 class="text-uppercase font-weight-bold">Service</h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Website Development</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Mobile App Development</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >E-commerce Development</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Customer Software Development</a
+              >
+            </p>
+          </div>
+
+          <!-- Column 4: Support -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h5 class="text-uppercase font-weight-bold">Support</h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Contact</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none"
+                >Term & Policy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
